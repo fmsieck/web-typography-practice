@@ -1,42 +1,56 @@
-html, body {
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: "bubbler_oneregular";
+  src: url("bubblerone-regular-webfont.woff") format("woff");
 }
-h1,h2,h3,h4,h5,h6 {
-    margin-top: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: "bubbler_oneregular";
+}
+
 body > * {
-    box-sizing: border-box;
-    font-size: 1rem;
+  box-sizing: border-box;
+  font-size: 1rem;
 }
+
 .items {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .item {
-    background: white;
-    border-radius: 3px;
+  background: white;
+  border-radius: 3px;
 }
 footer {
-    display: flex;
+  display: flex;
 }
 footer .column {
-    width: 33.33%;
+  width: 33.33%;
 }
 footer a {
-    text-decoration: none;
-    color: gray;
+  text-decoration: none;
+  color: gray;
 }
 @media (min-width: 650px) {
-    body > * {
-        box-sizing: border-box;
-        font-size: 1.25rem;
-    }
-    .items {
-        flex-direction: row;
-    }
-    .item {
-        background: white;
-        margin: 0 10px;
-    }
+  body > * {
+    box-sizing: border-box;
+    font-size: 1.25rem;
+  }
+  .items {
+    flex-direction: row;
+  }
+  .item {
+    background: white;
+    margin: 0 10px;
+  }
 }
